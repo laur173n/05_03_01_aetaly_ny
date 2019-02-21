@@ -49,7 +49,7 @@ function start() {
                     <article class="ret">
                         <img src="retter/${ret.billeder}.jpg">
                         <h2>${ret.navn}</h2>
-                        <p>${ret.beskrivelse} <br> Pris: ${ret.pris},-</p>
+
                     </article>
 `;
                 dest.insertAdjacentHTML("beforeend", template);

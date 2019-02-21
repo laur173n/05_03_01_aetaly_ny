@@ -69,11 +69,11 @@ body {
         display: none;
     }
 
-    #menu{
-    position: absolute;
-    height: 50vw;
-    display: inline-block;
-    background-color: transparent;
+    #menu {
+        position: absolute;
+        height: 50vw;
+        display: inline-block;
+        background-color: transparent;
 
     }
 
@@ -90,26 +90,67 @@ body {
     }
 
     .splash img {
+        margin: auto;
+    }
+
+
+}
+
+.ret {
+    margin: 2vw;
+    cursor: pointer;
+    font-family: avenir;
+    background-color: rgb(189, 217, 204);
+    text-align: center;
+    color: white;
+}
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-bottom: 2em;
+    margin: 0vw 6vw;
+}
+
+#singleview {
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    background-color: orange;
+    display: none;
+}
+
+#indhold {
+    box-sizing: border-box;
+    background-color: lightgray;
+    ;
+    width: 90vw;
     margin: auto;
 }
 
-
-        }
-
-        .ret {
-            margin: 5px;
-            padding: 6px;
-            cursor: pointer;
-            font-family: avenir;
-            background-color: #74BA9B;
-        }
-
-#liste{
-     display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            margin-bottom: 2em;
+.madmenu{
+    text-align: center;
 }
 
+.madmenu button{
+    font-size: 1.8rem;
+    font-family: avenir;
+    padding: 0vw 1vw;
+    border: none;
+    background-color: white;
+}
+
+.madmenu button:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #F5D301;
+    background-color: white;
+
+}
+
+.madmenu button:active {
+    text-decoration: none;
+    border-bottom: 3px solid #F5D301;
+    background-color: white;
+}
 
 }
