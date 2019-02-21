@@ -54,7 +54,74 @@ body {
     margin-top: 9vw;
 }
 
-/*MEDIAQUERY*/
+/*FORSIDE*/
+.kasse1 {
+    background-color: #FCCFEC;
+    display: flex;
+    width: 100%;
+    height: 50vw;
+    margin-top: -1vw;
+}
+
+
+/*MENU*/
+.ret {
+    margin: 2vw;
+    cursor: pointer;
+    font-family: avenir;
+    background-color: rgb(189, 217, 204);
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+#liste {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2em;
+    margin: 0vw 2vw;
+}
+
+
+.madmenu {
+    text-align: center;
+}
+
+.madmenu button {
+    font-size: 1rem;
+    font-family: avenir;
+    padding: 8vw 1vw 6vw;
+    border: transparent;
+    background-color: white;
+}
+
+
+.madmenu button:active {
+    text-decoration: none;
+    border-bottom: 3px solid #F5D301;
+    background-color: white;
+}
+
+/*SINGLEVIEW*/
+
+#singleview {
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    background-color: orange;
+    display: none;
+}
+
+#indhold {
+    box-sizing: border-box;
+    background-color: lightgray;
+    ;
+    width: 90vw;
+    margin: auto;
+}
+
+
+/*--------------------MEDIAQUERY FOR WEBSITE---------------------*/
 
 @media only screen and (min-width: 769px) {
 
@@ -94,63 +161,31 @@ body {
     }
 
 
-}
+    .ret {
+        margin: 2vw;
+        font-size: 1rem;
+    }
 
-.ret {
-    margin: 2vw;
-    cursor: pointer;
-    font-family: avenir;
-    background-color: rgb(189, 217, 204);
-    text-align: center;
-    color: white;
-}
+    #liste {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        margin-bottom: 2em;
+        margin: auto;
+        margin: 0vw 2vw;
 
-#liste {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    margin-bottom: 2em;
-    margin: 0vw 6vw;
-}
+    }
 
-#singleview {
-    width: 100vw;
-    height: 90vh;
-    position: fixed;
-    background-color: orange;
-    display: none;
-}
+    .madmenu button {
+        font-size: 1.5rem;
+        padding: 1vw 1vw 1vw;
+    }
 
-#indhold {
-    box-sizing: border-box;
-    background-color: lightgray;
-    ;
-    width: 90vw;
-    margin: auto;
-}
+    .madmenu button:hover {
+        border-bottom: 3px solid #F5D301;
+        padding: 1vw 1vw 1vw;
+    }
 
-.madmenu{
-    text-align: center;
-}
-
-.madmenu button{
-    font-size: 1.8rem;
-    font-family: avenir;
-    padding: 0vw 1vw;
-    border: none;
-    background-color: white;
-}
-
-.madmenu button:hover {
-    text-decoration: none;
-    border-bottom: 3px solid #F5D301;
-    background-color: white;
-
-}
-
-.madmenu button:active {
-    text-decoration: none;
-    border-bottom: 3px solid #F5D301;
-    background-color: white;
-}
-
+    .kasse1 {
+        height: 20vw;
+    }
 }
