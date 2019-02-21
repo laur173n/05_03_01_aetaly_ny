@@ -8,7 +8,7 @@ body {
 
 /*HEADER*/
 .logo img {
-    width: 50vw;
+    width: 45vw;
     display: block;
     margin: auto;
     margin-top: -8vw;
@@ -52,4 +52,64 @@ body {
 .splash img {
     margin: auto;
     margin-top: 9vw;
+}
+
+/*MEDIAQUERY*/
+
+@media only screen and (min-width: 769px) {
+
+    .logo img {
+        width: 16vw;
+        margin: auto;
+        margin-top: -2vw;
+    }
+
+
+    .menu-button {
+        display: none;
+    }
+
+    #menu{
+    position: absolute;
+    height: 50vw;
+    display: inline-block;
+    background-color: transparent;
+
+    }
+
+    #menu li a {
+        font-family: avenir;
+        text-decoration: none;
+        color: black;
+        list-style: none;
+        display: inline-block;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    .splash img {
+    margin: auto;
+}
+
+
+        }
+
+        .ret {
+            margin: 5px;
+            padding: 6px;
+            cursor: pointer;
+            font-family: avenir;
+            background-color: #74BA9B;
+        }
+
+#liste{
+     display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            margin-bottom: 2em;
+}
+
+
 }
