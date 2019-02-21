@@ -1,0 +1,39 @@
+.logo img {
+    width: 50vw;
+    display: block;
+    margin: auto;
+    margin-top: -8vw;
+}
+
+.menu-button img {
+    width: 10vw;
+    display: block;
+    margin: auto;
+    margin-top: -14vw;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#menu {
+    position: absolute;
+    background-color: green;
+    width: 96vw;
+    ;
+}
+
+.splash img {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 9vw;
+    justify-content: center;
+}
+
+nav li a {
+    font-family: avenir;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
