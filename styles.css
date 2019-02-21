@@ -4,9 +4,9 @@ img {
 
 body {
     margin: 0 auto;
-
 }
 
+/*HEADER*/
 .logo img {
     width: 50vw;
     display: block;
@@ -48,6 +48,7 @@ body {
     line-height: 12vw;
 }
 
+/*SPLASH*/
 .splash img {
     margin: auto;
     margin-top: 9vw;

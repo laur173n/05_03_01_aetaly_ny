@@ -1,16 +1,5 @@
 document.addEventListener("DOMContentLoaded", sidenVises);
 
-//function startSiden() {
-//    console.log("START SIDEN");
-//    document.querySelector(".menu-button").addEventListener("click", menuClick);
-//
-//}
-//
-//function menuClick() {
-//    console.log("MENU KLIK");
-//
-//
-//}
 
 function sidenVises() {
     console.log("siden vises");
