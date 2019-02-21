@@ -1,3 +1,12 @@
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+
+}
+
 .logo img {
     width: 50vw;
     display: block;
@@ -18,22 +27,28 @@
 
 #menu {
     position: absolute;
-    background-color: green;
-    width: 96vw;
-    ;
-}
-
-.splash img {
-    width: 100%;
-    margin: auto;
-    display: block;
+    background-color: #74BA9B;
+    height: 50vw;
     margin-top: 9vw;
-    justify-content: center;
+    width: 89vw;
 }
 
-nav li a {
+#menu li a {
     font-family: avenir;
     text-decoration: none;
     color: black;
+    display: block;
+    margin-left: -10vw;
+}
+
+#menu li {
+    list-style: none;
     text-align: center;
+    width: 100%;
+    line-height: 12vw;
+}
+
+.splash img {
+    margin: auto;
+    margin-top: 9vw;
 }
