@@ -153,6 +153,13 @@ body {
     left: 39vw
 }
 
+/*OM OS*/
+
+
+.omos-tekst{
+    font-family: avenir;
+    margin: 5vw;
+}
 
 footer{
     background-color: #74BA9B;
@@ -264,6 +271,12 @@ footer{
         margin: auto;
     }
 
+    .omos-tekst{
+    font-family: avenir;
+    margin: 2vw 15vw;
+        text-align: justify;
+}
+
     footer{
         font-size: 1.5rem;
         height: 25vw;
@@ -355,7 +368,7 @@ footer{
     }
 
     footer{
-        font-size: 2rem;
+        font-size: 1.5rem;
         height: 25vw;
 
     }
