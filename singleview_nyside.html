@@ -32,12 +32,7 @@
             </ul>
         </nav>
     </header>
-    <div class="madmenu">
-        <button class="filter valgt" data-hold="carte">a'la carte</button>
-        <button class="filter" data-hold="pizza">pizza</button>
-        <button class="filter" data-hold="desserter">desserter</button>
-        <button class="filter" data-hold="drikkevarer">drikkevarer</button>
-    </div>
+
 
     <div id="liste">
 
@@ -47,6 +42,53 @@
 
     </footer>
     <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+        let alleRetter;
+        let ret;
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            async function getJson() {
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1zMhslY-hxnX8EoD2tUBJ1woH-8A27lzPwahnchvH2tQ");
+                alleRetter = await jsonData.json();
+                alleRetter.forEach(obj => {
+                    console.log(obj.id + " " + id);
+                    if (obj.id == id) {
+                        console.log("ID FUNDET");
+                        ret = obj;
+                    }
+                })
+
+                åbn();
+
+            }
+
+            function åbn() {
+                console.log("ÅBN ret ", ret);
+                console.log(ret.billeder);
+                document.querySelector("#indhold").innerHTML = `
+                    <article class="ret">
+                        <img src="retter/${ret.billeder}.jpg">
+                        <h2>${ret.navn}</h2>
+                        <p>Beskrivelse: <br>  ${ret.kort} <br> Pris: ${ret.pris},-</p>
+                    </article>`;
+                document.querySelector("#singleview").style.display = "block";
+
+
+            }
+
+            document.querySelector("#tilbage button").addEventListener("click", () => {
+                location.href = "menu.html"
+            })
+
+            //funktionen visRetter slut
+
+
+
+            getJson();
+        }
 
     </script>
 </body>

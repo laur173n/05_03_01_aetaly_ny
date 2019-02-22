@@ -7,13 +7,16 @@ function sidenVises() {
     console.log("siden vises");
     // registrer klik på menuknap
     document.querySelector(".menu-button").addEventListener("click", toggleMenu);
+
+    start();
+
 }
 
 function toggleMenu() {
     console.log("Toggle menu");
     document.querySelector("#menu").classList.toggle("hide");
 
-    let erSkjult = document.querySelector("#menu").classList.contains("hide")
+    let erSkjult = document.querySelector("#menu").classList.contains("hide");
 
     if (erSkjult == true) {
         //menuen er skjult - ændr menuknap til lll
@@ -24,7 +27,6 @@ function toggleMenu() {
     }
 }
 
-start();
 //BURGERMENU SLUT
 
 
@@ -53,7 +55,9 @@ function start() {
                     </article>
 `;
                 dest.insertAdjacentHTML("beforeend", template);
+
                 dest.lastElementChild.addEventListener("click", () => {
+                    console.log(ret.id);
                     location.href = "singleview_nyside.html?id=" + ret.id;
                 });
 
