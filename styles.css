@@ -11,14 +11,14 @@ body {
     width: 45vw;
     display: block;
     margin: auto;
-    margin-top: -8vw;
+    margin-top: 2vw;
 }
 
 .menu-button img {
     width: 10vw;
     display: block;
     margin: auto;
-    margin-top: -14vw;
+    margin-top: 1vw;
 }
 
 .hide {
@@ -58,20 +58,17 @@ body {
     background-color: #FCCFEC;
     width: 100%;
     height: 30vw;
-    margin-top: -1vw;
-    padding-bottom: 7vw;
+    margin-top: -7vw;
 }
 
 
-.quote {
-    display: none;
-}
 
 .las-mere {
     font-family: avenir;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+    padding-top: 7vw;
 }
 
 .las-mere a {
@@ -120,6 +117,7 @@ body {
 
 /*SINGLEVIEW*/
 
+
 #singleview {
     width: 100%;
     height: 120vh;
@@ -130,30 +128,48 @@ body {
 #indhold {
     box-sizing: border-box;
     ;
-    width: 30vw;
+    width: 100vw;
     margin: auto;
 }
 
-        #tilbage {
-            text-align: center;
-            margin-top: 18vw;
-        }
 
-        #tilbage button {
-            font-size: 1rem;
-            cursor: pointer;
+#tilbage {
+    text-align: center;
+    margin-top: 30vw;
+}
 
-        }
+#tilbage button {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    color: #74BA9B;
+    background-color: transparent;
+}
 
-/*--------------------MEDIAQUERY FOR WEBSITE---------------------*/
+#tilbage img {
+    width: 5vw;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 39vw
+}
 
-@media only screen and (min-width: 769px) {
+/*--------------------MEDIAQUERY FOR IPAD---------------------*/
+
+
+@media only screen and (min-width: 528px) {
 
     .logo img {
         width: 16vw;
         margin-top: -2vw;
+        display: block;
+
     }
 
+    .logo {
+        margin-bottom: -2vw;
+        display: block;
+
+    }
 
 
     /*MENU*/
@@ -174,15 +190,69 @@ body {
 
     #menu li {
         display: inline-block;
-        width: 5vw;
+        width: 6vw;
         margin-top: -80vw;
         margin-left: 15vw;
         line-height: 0;
+        z-index: 100;
 
     }
 
     #menu li a {
         padding: 0;
+    }
+
+
+    #liste {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        margin-bottom: 2em;
+        margin: auto;
+        margin: 0vw 2vw;
+
+    }
+
+    #tilbage {
+        text-align: center;
+        margin-top: 18vw;
+    }
+
+    #tilbage button {
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        color: #74BA9B;
+        background-color: transparent;
+    }
+
+    #tilbage img {
+        width: 2vw;
+        position: absolute;
+        transform: rotate(-90deg);
+        left: 45vw
+    }
+
+    #singleview {
+        width: 100%;
+        position: fixed;
+        display: none;
+    }
+
+    #indhold {
+        box-sizing: border-box;
+        ;
+        width: 50vw;
+        margin: auto;
+    }
+}
+
+/*--------------------MEDIAQUERY FOR WEBSITE---------------------*/
+
+@media only screen and (min-width: 1025px) {
+
+    .logo img {
+        width: 16vw;
+        margin-top: -2vw;
     }
 
     /*SPLASH*/
@@ -219,26 +289,44 @@ body {
         height: 15vw;
     }
 
-    .quote {
-        display: block;
-    }
-
-    .quote img {
-        width: 10vw;
-
-    }
-
-    .quote_tekst {
-        color: white;
-        font-size: 4rem;
-        font-style: italic;
-        font-family: avenir;
-        position: absolute;
-        left: 10vw;
-        top: 80vw;
-    }
 
     .las-mere {
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+
+    /*SINGLEVIEW*/
+
+    #singleview {
+        position: fixed;
+        display: none;
+        height: auto;
+    }
+
+    #indhold {
+        box-sizing: border-box;
+        ;
+        width: 30vw;
+        margin: auto;
+        margin-bottom: -20vw;
+    }
+
+
+    #tilbage {
+        text-align: center;
+        margin-top: 11vw;
+    }
+
+    #tilbage button {
+        font-size: 1.3rem;
+        cursor: pointer;
+        border: none;
+        color: #74BA9B;
+    }
+
+    #tilbage img {
+        width: 1.5vw;
+        position: absolute;
+        transform: rotate(-90deg);
+        left: 46vw
     }
 }
