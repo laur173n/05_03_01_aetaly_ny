@@ -187,8 +187,6 @@ footer{
     .logo img {
         width: 20vw;
         margin-top: -2vw;
-        display: block;
-
     }
 
     .logo {
@@ -196,7 +194,6 @@ footer{
         display: block;
 
     }
-
 
     /*MENU*/
 
@@ -211,7 +208,6 @@ footer{
     #menu {
         background-color: transparent;
         margin-top: -4vw;
-        pointer-events: none;
     }
 
     #menu li {
