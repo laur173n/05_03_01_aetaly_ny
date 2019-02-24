@@ -18,7 +18,7 @@ body {
     width: 10vw;
     display: block;
     margin: auto;
-    margin-top: 1vw;
+    margin-top: -10vw;
 }
 
 .hide {
@@ -28,7 +28,7 @@ body {
 #menu {
     position: absolute;
     background-color: #74BA9B;
-    margin-top: 9vw;
+    margin-top: 2vw;
     width: 89vw;
 }
 
@@ -208,6 +208,7 @@ footer{
     #menu {
         background-color: transparent;
         margin-top: -4vw;
+        margin-left: -1.2vw;
     }
 
     #menu li {
@@ -288,6 +289,10 @@ footer{
         margin-top: -2vw;
     }
 
+
+    #menu {
+        margin-left: 0.8vw;
+    }
     /*SPLASH*/
     .splash img {
         margin: auto;
