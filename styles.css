@@ -217,7 +217,8 @@ footer{
         margin-top: -80vw;
         margin-left: 15vw;
         z-index: 100;
-        height:
+        line-height: 5vw;
+
 
     }
 
@@ -274,6 +275,38 @@ footer{
         text-align: justify;
 }
 
+    /*    book bord */
+
+    .booking img{
+        width: 70%;
+        margin: 2vw 10vw;
+    }
+
+    .booking_box{
+        background-color: #FCCFEC;
+        width: 20vw;
+        height: 28vw;
+        position: absolute;
+        top: 30vw;
+        left: 70vw;
+    }
+
+    .booking h6{
+        font-family: avenir;
+        font-size: 1rem;
+         margin: 2vw;
+
+    }
+
+    .booking_box p{
+        font-family: avenir;
+        padding: 0.5vw;
+        margin: 3vw 2vw;
+        border: 1px solid white;
+        color: #74BA9B;
+
+    }
+
     footer{
         font-size: 1.5rem;
         height: 25vw;
@@ -292,7 +325,10 @@ footer{
 
     #menu {
         margin-left: 0.8vw;
+        margin-bottom: -20vw;
     }
+
+
     /*SPLASH*/
     .splash img {
         margin: auto;
@@ -367,6 +403,8 @@ footer{
         transform: rotate(-90deg);
         left: 46vw
     }
+
+
 
     footer{
         font-size: 1.5rem;
