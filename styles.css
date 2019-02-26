@@ -32,8 +32,8 @@ button:focus {
 #menu {
     position: absolute;
     background-color: #74BA9B;
-    margin-top: 2vw;
-    width: 89vw;
+    margin-top: 3vw;
+    width: 100%;
 }
 
 #menu li a {
@@ -65,8 +65,6 @@ button:focus {
     margin-top: -7vw;
 }
 
-
-
 .las-mere {
     font-family: avenir;
     text-align: center;
@@ -88,14 +86,13 @@ button:focus {
     font-family: avenir;
     background-color: rgb(189, 217, 204);
     text-align: center;
-    color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
+
 
 #liste {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 2em;
     margin: 0vw 2vw;
 }
 
@@ -157,6 +154,9 @@ button:focus {
     font-family: avenir;
     margin: 5vw;
 }
+
+
+
 
 footer {
     background-color: #74BA9B;
@@ -250,18 +250,23 @@ footer {
         margin-left: 15vw;
         z-index: 100;
         line-height: 5vw;
-
-
     }
 
     #menu li a {
         padding: 0;
     }
 
+    .madmenu button {
+        font-size: 1rem;
+        padding: 1vw 1vw 1vw;
+        cursor: pointer;
+
+    }
+
 
     #liste {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         margin-bottom: 2em;
         margin: auto;
         margin: 0vw 2vw;
@@ -278,10 +283,11 @@ footer {
         width: 50vw;
     }
 
+    /*    om os*/
+
     .omos-tekst {
         font-family: avenir;
-        margin: 2vw 15vw;
-        text-align: justify;
+        margin: 5vw 15vw;
     }
 
     /*    book bord */
@@ -301,17 +307,22 @@ footer {
 
     .booking h6 {
         font-size: 0.8rem;
-        margin: 2vw;
+        margin: 1vw;
         padding-top: 1vw;
+        text-align: left;
+        margin: 1vw 2vw;
+
 
     }
 
     .booking_box p {
         font-family: avenir;
         padding: 0.5vw;
-        margin: 2vw 2vw;
+        margin: 2vw 2vw 3vw 2vw;
         border: 1px solid white;
         color: #74BA9B;
+        font-size: 0.8rem;
+
     }
 
     .forsaet p {
@@ -336,10 +347,10 @@ footer {
 
 
     #menu {
-        margin-left: 0.8vw;
+        margin-left: 2vw;
         margin-bottom: -20vw;
+        padding-top: 1vw;
     }
-
 
     /*SPLASH*/
     .splash img {
@@ -349,12 +360,11 @@ footer {
     /*GRID*/
     .ret {
         margin: 2vw;
-        font-size: 0.7rem;
     }
 
     #liste {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
         margin-bottom: 2em;
         margin: auto;
         margin: 0vw 2vw;
@@ -364,6 +374,8 @@ footer {
     .madmenu button {
         font-size: 1rem;
         padding: 1vw 1vw 1vw;
+        cursor: pointer;
+
     }
 
     .madmenu button:hover {
@@ -406,6 +418,27 @@ footer {
 
     /*    BOOD BORD*/
 
+    .booking_box {
+        width: 23vw;
+        height: 27.7vw;
+    }
+
+    .booking h6 {
+        font-size: 0.8rem;
+    }
+
+    .booking_box p {
+        margin: 2vw;
+
+    }
+
+    /*    om os*/
+
+    .omos-tekst {
+        font-family: avenir;
+        margin: 5vw 25vw;
+        text-align: justify;
+    }
 
     footer {
         font-size: 1.5rem;

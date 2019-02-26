@@ -50,7 +50,7 @@ function start() {
                 let template = `
                     <article class="ret">
                         <img src="retter/${ret.billeder}.jpg">
-                        <h2>${ret.navn}</h2>
+                        <p>${ret.navn}</p>
 
                     </article>
 `;
