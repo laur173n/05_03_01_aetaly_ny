@@ -175,8 +175,43 @@ footer {
     color: white;
 }
 
+/*  book bord */
 
-/*--------------------MEDIAQUERY FOR IPAD---------------------*/
+.booking img {
+    width: 100%;
+}
+
+.booking_box {
+    background-color: #FCCFEC;
+    margin: 3vw;
+    height: 40vw;
+}
+
+.booking h6 {
+    font-family: avenir;
+    font-size: 1rem;
+    margin: 2vw;
+    padding-top: 4vw;
+    text-align: center;
+}
+
+.booking_box p {
+    font-family: avenir;
+    font-size: 0.6rem;
+    padding: 1vw;
+    margin: 3vw 20vw 2vw 20vw;
+    border: 1px solid white;
+    color: #74BA9B;
+}
+
+.forsaet p {
+    background-color: #74BA9B;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+/*--------------------MEDIAQUERY FOR IPAD---------------*/
 
 
 @media only screen and (min-width: 528px) {
@@ -257,28 +292,31 @@ footer {
     }
 
     .booking_box {
-        background-color: #FCCFEC;
-        width: 20vw;
-        height: 28vw;
+        width: 24vw;
+        height: 31.7vw;
         position: absolute;
         top: 30vw;
-        left: 70vw;
+        left: 63vw;
     }
 
     .booking h6 {
-        font-family: avenir;
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin: 2vw;
+        padding-top: 1vw;
 
     }
 
     .booking_box p {
         font-family: avenir;
         padding: 0.5vw;
-        margin: 3vw 2vw;
+        margin: 2vw 2vw;
         border: 1px solid white;
         color: #74BA9B;
+    }
 
+    .forsaet p {
+        border: none;
+        color: white;
     }
 
     footer {
@@ -365,6 +403,8 @@ footer {
         text-align: center;
         margin-top: 11vw;
     }
+
+    /*    BOOD BORD*/
 
 
     footer {
