@@ -12,14 +12,14 @@ button:focus {
 
 /*HEADER*/
 .logo img {
-    width: 45vw;
+    width: 38vw;
     display: block;
     margin: auto;
-    margin-top: 2vw;
+    margin-top: -2vw;
 }
 
 .menu-button img {
-    width: 10vw;
+    width: 8vw;
     display: block;
     margin: auto;
     margin-top: -10vw;
@@ -41,7 +41,7 @@ button:focus {
     text-decoration: none;
     color: black;
     display: block;
-    margin-left: -10vw;
+    margin-left: -19vw;
 }
 
 #menu li {
@@ -155,26 +155,6 @@ button:focus {
     margin: 5vw;
 }
 
-
-
-
-footer {
-    background-color: #74BA9B;
-    height: 65vw;
-    margin-top: -1vw;
-    display: flex;
-    font-family: avenir;
-}
-
-.box {
-    padding: 2vw;
-    color: #F5D301;
-}
-
-.overskrift {
-    color: white;
-}
-
 /*  book bord */
 
 .booking img {
@@ -224,7 +204,11 @@ footer {
     .logo {
         margin-bottom: -2vw;
         display: block;
+    }
 
+    .splash img {
+        margin: auto;
+        margin-top: 2vw;
     }
 
     /*MENU*/
@@ -240,7 +224,7 @@ footer {
     #menu {
         background-color: transparent;
         margin-top: -4vw;
-        margin-left: -1.2vw;
+        margin-left: 2.3vw;
     }
 
     #menu li {
@@ -341,20 +325,21 @@ footer {
 @media only screen and (min-width: 1025px) {
 
     .logo img {
-        width: 16vw;
-        margin-top: -2vw;
+        width: 14vw;
+        margin-top: -1vw;
     }
 
 
     #menu {
-        margin-left: 2vw;
+        margin-left: 6.3vw;
         margin-bottom: -20vw;
-        padding-top: 1vw;
+        padding-top: 1.7vw;
     }
 
     /*SPLASH*/
     .splash img {
         margin: auto;
+        margin-top: 2vw;
     }
 
     /*GRID*/
