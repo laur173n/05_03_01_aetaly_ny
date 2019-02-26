@@ -6,6 +6,10 @@ body {
     margin: 0 auto;
 }
 
+button:focus {
+    outline: 0;
+}
+
 /*HEADER*/
 .logo img {
     width: 45vw;
@@ -121,7 +125,7 @@ body {
 #singleview {
     width: 100%;
     height: 120vh;
-    position: fixed;
+    position: absolute;
     display: none;
 }
 
@@ -142,26 +146,19 @@ body {
     font-size: 1rem;
     cursor: pointer;
     border: none;
-    color: #74BA9B;
+    color: ;
     background-color: transparent;
-}
-
-#tilbage img {
-    width: 5vw;
-    position: absolute;
-    transform: rotate(-90deg);
-    left: 39vw
 }
 
 /*OM OS*/
 
 
-.omos-tekst{
+.omos-tekst {
     font-family: avenir;
     margin: 5vw;
 }
 
-footer{
+footer {
     background-color: #74BA9B;
     height: 65vw;
     margin-top: -1vw;
@@ -169,12 +166,12 @@ footer{
     font-family: avenir;
 }
 
-.box{
+.box {
     padding: 2vw;
     color: #F5D301;
 }
 
-.overskrift{
+.overskrift {
     color: white;
 }
 
@@ -241,48 +238,25 @@ footer{
         margin-top: 18vw;
     }
 
-    #tilbage button {
-        font-size: 1rem;
-        cursor: pointer;
-        border: none;
-        color: #74BA9B;
-        background-color: transparent;
-    }
-
-    #tilbage img {
-        width: 2vw;
-        position: absolute;
-        transform: rotate(-90deg);
-        left: 45vw
-    }
-
-    #singleview {
-        width: 100%;
-        position: fixed;
-        display: none;
-    }
 
     #indhold {
-        box-sizing: border-box;
-        ;
         width: 50vw;
-        margin: auto;
     }
 
-    .omos-tekst{
-    font-family: avenir;
-    margin: 2vw 15vw;
+    .omos-tekst {
+        font-family: avenir;
+        margin: 2vw 15vw;
         text-align: justify;
-}
+    }
 
     /*    book bord */
 
-    .booking img{
+    .booking img {
         width: 70%;
         margin: 2vw 10vw;
     }
 
-    .booking_box{
+    .booking_box {
         background-color: #FCCFEC;
         width: 20vw;
         height: 28vw;
@@ -291,14 +265,14 @@ footer{
         left: 70vw;
     }
 
-    .booking h6{
+    .booking h6 {
         font-family: avenir;
         font-size: 1rem;
-         margin: 2vw;
+        margin: 2vw;
 
     }
 
-    .booking_box p{
+    .booking_box p {
         font-family: avenir;
         padding: 0.5vw;
         margin: 3vw 2vw;
@@ -307,7 +281,7 @@ footer{
 
     }
 
-    footer{
+    footer {
         font-size: 1.5rem;
         height: 25vw;
     }
@@ -359,6 +333,12 @@ footer{
         padding: 1vw 1vw 1vw;
     }
 
+    #menu li a:hover {
+        color: #F5D301;
+        padding: 20vw 1vw 1vw;
+    }
+
+
     .kasse1 {
         height: 15vw;
     }
@@ -371,43 +351,23 @@ footer{
     /*SINGLEVIEW*/
 
     #singleview {
-        position: fixed;
+        position: absolute;
         display: none;
         height: auto;
     }
 
     #indhold {
-        box-sizing: border-box;
-        ;
         width: 30vw;
-        margin: auto;
         margin-bottom: -20vw;
     }
-
 
     #tilbage {
         text-align: center;
         margin-top: 11vw;
     }
 
-    #tilbage button {
-        font-size: 1.3rem;
-        cursor: pointer;
-        border: none;
-        color: #74BA9B;
-    }
 
-    #tilbage img {
-
-        width: 1.5vw;
-        position: absolute;
-        transform: rotate(-90deg);
-        left: 46vw
-    }
-
-
-
-    footer{
+    footer {
         font-size: 1.5rem;
         height: 25vw;
 
