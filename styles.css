@@ -4,6 +4,7 @@ img {
 
 body {
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 button:focus {
@@ -61,22 +62,35 @@ button:focus {
 .kasse1 {
     background-color: #FCCFEC;
     width: 100%;
-    height: 30vw;
+    height: 32vw;
     margin-top: -7vw;
 }
 
 .las-mere {
     font-family: avenir;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    padding-top: 7vw;
 }
 
 .las-mere a {
     text-decoration: none;
     color: black;
+}
 
+.quote img {
+    width: 7vw;
+    margin-left: 2vw;
+    margin-top: 7vw;
+}
+
+.quote p {
+    font-family: avenir;
+    font-style: italic;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: -4vw;
 }
 
 /*MENU*/
@@ -155,7 +169,7 @@ button:focus {
     margin: 5vw;
 }
 
-/*  book bord */
+/*  BOOK BORD */
 
 .booking img {
     width: 100%;
@@ -163,7 +177,7 @@ button:focus {
 
 .booking_box {
     background-color: #FCCFEC;
-    margin: 3vw;
+    margin: 8vw 3vw 3vw;
     height: 40vw;
 }
 
@@ -191,6 +205,48 @@ button:focus {
     text-align: center;
 }
 
+/*KONTAKT*/
+
+#kontakt {
+    background-color: #9EC4DA;
+    font-family: avenir;
+    text-align: center;
+    margin-top: 8vw;
+
+}
+
+.box {
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+}
+
+.overskrift {
+    color: #FCCFEC;
+    font-weight: bold;
+    margin-top: 5vw;
+}
+
+/* FOOTER */
+
+#footer_box {
+    text-align: center;
+    background-color: #74BA9B;
+    font-family: avenir;
+    margin-top: -1vw;
+}
+
+footer .overskrift {
+    color: #F5D301;
+    font-size: 0.9rem;
+    margin: 2vw;
+    ;
+}
+
+footer p {
+    font-size: 0.7rem;
+    padding: none;
+}
+
 /*--------------------MEDIAQUERY FOR IPAD---------------*/
 
 
@@ -209,6 +265,22 @@ button:focus {
     .splash img {
         margin: auto;
         margin-top: 2vw;
+    }
+
+    /*FORSIDE*/
+    .las-mere {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .quote img {
+        width: 7vw;
+        margin-left: 12vw;
+        margin-top: 8vw;
+    }
+
+    .quote p {
+        font-size: 1.4rem;
     }
 
     /*MENU*/
@@ -244,9 +316,7 @@ button:focus {
         font-size: 1rem;
         padding: 1vw 1vw 1vw;
         cursor: pointer;
-
     }
-
 
     #liste {
         display: grid;
@@ -267,14 +337,14 @@ button:focus {
         width: 50vw;
     }
 
-    /*    om os*/
+    /* OM OS */
 
     .omos-tekst {
         font-family: avenir;
         margin: 5vw 15vw;
     }
 
-    /*    book bord */
+    /* BOOK BORD */
 
     .booking img {
         width: 70%;
@@ -285,18 +355,16 @@ button:focus {
         width: 24vw;
         height: 31.7vw;
         position: absolute;
-        top: 30vw;
+        top: 25vw;
         left: 63vw;
     }
 
     .booking h6 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         margin: 1vw;
         padding-top: 1vw;
         text-align: left;
         margin: 1vw 2vw;
-
-
     }
 
     .booking_box p {
@@ -305,8 +373,7 @@ button:focus {
         margin: 2vw 2vw 3vw 2vw;
         border: 1px solid white;
         color: #74BA9B;
-        font-size: 0.8rem;
-
+        font-size: 0.6rem;
     }
 
     .forsaet p {
@@ -314,120 +381,182 @@ button:focus {
         color: white;
     }
 
-    footer {
-        font-size: 1.5rem;
-        height: 25vw;
-    }
-}
+    /* KONTAKT */
 
-/*--------------------MEDIAQUERY FOR WEBSITE---------------------*/
-
-@media only screen and (min-width: 1025px) {
-
-    .logo img {
-        width: 14vw;
-        margin-top: -1vw;
-    }
-
-
-    #menu {
-        margin-left: 6.3vw;
-        margin-bottom: -20vw;
-        padding-top: 1.7vw;
-    }
-
-    /*SPLASH*/
-    .splash img {
-        margin: auto;
+    #kontakt {
         margin-top: 2vw;
-    }
-
-    /*GRID*/
-    .ret {
-        margin: 2vw;
-    }
-
-    #liste {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-        margin-bottom: 2em;
-        margin: auto;
-        margin: 0vw 2vw;
 
     }
 
-    .madmenu button {
-        font-size: 1rem;
-        padding: 1vw 1vw 1vw;
-        cursor: pointer;
-
+    .overskrift {
+        font-weight: bold;
+        font-size: 1.rem;
+        margin-top: 0vw;
     }
 
-    .madmenu button:hover {
-        border-bottom: 3px solid #F5D301;
-        padding: 1vw 1vw 1vw;
+    /* FOOTER */
+
+    #footer_box {
+        display: flex;
+        justify-content: space-around;
     }
 
-    #menu li a:hover {
-        color: #F5D301;
-        padding: 20vw 1vw 1vw;
+    footer .overskrift {
+        font-size: 0.7rem;
     }
 
-
-    .kasse1 {
-        height: 15vw;
+    footer p {
+        font-size: 0.6rem;
     }
 
+    /*--------------------MEDIAQUERY FOR WEBSITE---------------------*/
 
-    .las-mere {
-        font-size: 1.5rem;
-    }
+    @media only screen and (min-width: 1025px) {
 
-    /*SINGLEVIEW*/
+        .logo img {
+            width: 14vw;
+            margin-top: -1vw;
+        }
 
-    #singleview {
-        position: absolute;
-        display: none;
-        height: auto;
-    }
 
-    #indhold {
-        width: 30vw;
-        margin-bottom: -20vw;
-    }
+        #menu {
+            margin-left: 6.3vw;
+            margin-bottom: -20vw;
+            padding-top: 1.9vw;
+        }
 
-    #tilbage {
-        text-align: center;
-        margin-top: 11vw;
-    }
+        /*SPLASH*/
+        .splash img {
+            margin: auto;
+            margin-top: 2vw;
+        }
 
-    /*    BOOD BORD*/
+        /*FORSIDE*/
+        .las-mere {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 3vw;
+        }
 
-    .booking_box {
-        width: 23vw;
-        height: 27.7vw;
-    }
+        .quote img {
+            width: 6vw;
+            margin-left: 16vw;
+            margin-top: 8vw;
+        }
 
-    .booking h6 {
-        font-size: 0.8rem;
-    }
+        .quote p {
+            font-size: 2rem;
+            padding-top: 1vw;
+        }
 
-    .booking_box p {
-        margin: 2vw;
+        /*GRID*/
+        .ret {
+            margin: 2vw;
+        }
 
-    }
+        #liste {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+            margin-bottom: 2em;
+            margin: auto;
+            margin: 0vw 2vw;
 
-    /*    om os*/
+        }
 
-    .omos-tekst {
-        font-family: avenir;
-        margin: 5vw 25vw;
-        text-align: justify;
-    }
+        .madmenu button {
+            font-size: 1rem;
+            padding: 1vw 1vw 1vw;
+            cursor: pointer;
 
-    footer {
-        font-size: 1.5rem;
-        height: 25vw;
+        }
 
-    }
-}
+        .madmenu button:hover {
+            border-bottom: 3px solid #F5D301;
+            padding: 1vw 1vw 1vw;
+        }
+
+        #menu li a:hover {
+            color: #F5D301;
+            padding: 20vw 1vw 1vw;
+        }
+
+
+        .kasse1 {
+            height: 25vw;
+        }
+
+
+        .las-mere {
+            font-size: 1.5rem;
+        }
+
+        /* SINGLEVIEW */
+
+        #singleview {
+            position: absolute;
+            display: none;
+            height: auto;
+        }
+
+        #indhold {
+            width: 30vw;
+            margin-bottom: -20vw;
+        }
+
+        #tilbage {
+            text-align: center;
+            margin-top: 11vw;
+        }
+
+        /* BOOD BORD */
+
+        .booking_box {
+            width: 21vw;
+            height: 27.7vw;
+            margin-left: 5vw;
+            margin-top: 7vw;
+        }
+
+        .booking h6 {
+            font-size: 0.9rem;
+        }
+
+        .booking_box p {
+            margin: 2vw;
+            font-size: 0.9rem;
+
+        }
+
+        /* OM OS */
+
+        .omos-tekst {
+            font-family: avenir;
+            margin: 5vw 25vw;
+            text-align: justify;
+        }
+
+        /* KONTAKT */
+        #kontakt {
+            margin-top: 2vw;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 2vw;
+            height: 100vh;
+
+        }
+
+        .overskrift {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 0vw;
+        }
+
+        /* FOOTER */
+
+        footer .overskrift {
+            font-size: 1.2rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
